@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="Ppt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+</head>
+<body>
+    <h1>Calculadora em Javascript</h1>
+
+    <div class="calculadora">
+        <input type="text" class="visor" id="visor" disabled>
+        <div class="botoes">
+            <button id="botao" onclick="limparVisor()" class="botaoC">C</button>
+            <button id="botao" onclick="insValor('/')" class="botaoOpc">/</button>
+            <button id="botao" onclick="insValor('*')" class="botaoOpc">*</button>
+            <button id="botao" onclick="insValor('-')" class="botaoOpc">-</button>
+            <button id="botao" onclick="insValor('7')">7</button>
+            <button id="botao" onclick="insValor('8')">8</button>
+            <button id="botao" onclick="insValor('9')">9</button>
+            <button id="botao" onclick="insValor('+')" class="botaoOpc">+</button>
+            <button id="botao" onclick="insValor('4')">4</button>
+            <button id="botao" onclick="insValor('5')">5</button>
+            <button id="botao" onclick="insValor('6')">6</button>
+            <button id="botao" onclick="calcResultado()" class="botaoIgual">=</button>
+            <button id="botao" onclick="insValor('1')">1</button>
+            <button id="botao" onclick="insValor('2')">2</button>
+            <button id="botao" onclick="insValor('3')">3</button>
+            <button id="botao" onclick="insValor('0')" class="botao0">0</button>
+            <button id="botao" onclick="insValor('.')">.</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"> </script>
+</body>
+</html>
