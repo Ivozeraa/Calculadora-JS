@@ -1,76 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --text-color: white;
+  --bg-url: url(/assets/bg-mobile.jpg);
+  --stroke-color: rgb(255, 255, 255, 0.5);
+  --surface-color: rgb(255, 255, 255, 0.05);
+  --surface-color-hover: rgb(0, 0, 0, 0.02);
+  --highlight-color: rgb(255, 255, 255, 0.2);
+  --switch-bg: url(/assets/moon.svg);
+  --spanFooter: rgb(195, 131, 255);
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, rgb(100, 0, 0), rgb(150, 1, 1), rgb(100, 0, 0));
-    text-align: center;
-    font-family: system-ui;
-    color: rgb(231, 231, 231);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgb(68, 0, 100),
+    rgb(103, 1, 150),
+    rgb(72, 0, 100)
+  );
+  text-align: center;
+  font-family: Inter;
+  color: rgb(231, 231, 231);
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+.logoInfor {
+  mix-blend-mode: lighten;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  justify-content: sp;
+}
+.logoInfor img{
+    width: 60px;
+    height: 60px;
+    justify-content: s;
+
 }
 
 .calculadora {
-    margin: 5rem auto;
-    width: 20rem;
-    background: #323232;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 2px 20px rgb(15, 15, 15);    
+  margin: 5rem auto;
+  width: 20rem;
+  background: #323232;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 20px rgb(15, 15, 15);
 }
 
-.visor{
-    border-radius: 8px;
-    margin: 1rem auto;
-    padding: 0.5rem;
-    color: #d7d7d7;
-    height: 2rem;
-    width: 90%;
-    font-size: 1.75rem;
+.visor {
+  border-radius: 8px;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  color: #d7d7d7;
+  height: 2rem;
+  width: 90%;
+  font-size: 1.75rem;
 }
 
 .botoes {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 5px;
 }
 
 button {
-    border-radius: 15px;
-    padding: 15px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    background-color: #bfbfbf;
-    transition: scale 70ms;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  background-color: #bfbfbf;
+  transition: scale 70ms;
 }
 
-#botao{
-    box-shadow: 2px 2px 5px rgb(15, 15, 15);
+#botao {
+  box-shadow: 2px 2px 5px rgb(15, 15, 15);
 }
 
-.botaoOpc{
-    background-color: #4b4b4b;
-    color: rgb(255, 255, 255);
+.botaoOpc {
+  background-color: #4b4b4b;
+  color: rgb(255, 255, 255);
 }
 
-.botaoIgual{
-    background-color: rgb(200, 80, 0);
-    color: rgb(255, 255, 255);
-    grid-row: span 3;
+#botaoMais{
+    background: url("wylson.jpg");
+}
+.botaoIgual {
+  background-color: rgb(0, 200, 107);
+  font-size: 5rem;
+  color: rgb(149, 0, 248);
+  grid-row: span 3;
+  grid-column: span 1;
+  background: url("./assets/image.png");
+  background-position: center;
 }
 
-.botaoC{
-    background-color: rgb(200, 80, 0);
-    color: rgb(255, 255, 255);
+.botaoC {
+    background: url("image.png");
+  background-position: center;
+  background-color: rgb(0, 200, 107);
+  color: rgb(255, 255, 255);
 }
 
-.botao0{
-    grid-column: span 2;
-    
+.botao0 {
+  grid-column: span 2;
+
+  background-position: center;
 }
 
 button:active {
-    background-color: #e2e2e2;
-    color: rgb(0, 0, 0);
-    scale: 0.95;
+  background-color: #e2e2e2;
+  color: rgb(0, 0, 0);
+  scale: 0.95;
+}
+
+.footer{
+    font-weight: bold;
 }

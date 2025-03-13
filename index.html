@@ -7,7 +7,12 @@
     <title>Calculadora JS</title>
 </head>
 <body>
-    <h1>Calculadora em Javascript</h1>
+    <header>
+        <span class="logoInfor"><img src="./assets/logo.png" alt="logo">
+
+        <h1 class="title">Calculadora em Javascript</h1>
+    </header>
+    
 
     <div class="calculadora">
         <input type="text" class="visor" id="visor" disabled>
@@ -19,7 +24,7 @@
             <button id="botao" onclick="insValor('7')">7</button>
             <button id="botao" onclick="insValor('8')">8</button>
             <button id="botao" onclick="insValor('9')">9</button>
-            <button id="botao" onclick="insValor('+')" class="botaoOpc">+</button>
+            <button id="botao" onclick="insValor('+')" class="botaoOpc" id="botaoMais">+</button>
             <button id="botao" onclick="insValor('4')">4</button>
             <button id="botao" onclick="insValor('5')">5</button>
             <button id="botao" onclick="insValor('6')">6</button>
@@ -32,6 +37,10 @@
         </div>
     </div>
 
+
+    <footer class="footer">
+        © Byte Company 2025 - Todos os direitos reservados
+    </footer>
 
     <script src="script.js"> </script>
 </body>
